@@ -10,41 +10,90 @@
 </head>
 
 <body>
-    <!-- Navbar laterale -->
-    <nav class="sidebar">
-        <img src="img/logo.svg" alt="logo">
-        <ul>
-            <li>Home</li>
-            <li>Cerca</li>
-            <li>Libreria</li>
-            <li>Playlist</li>
-        </ul>
-    </nav>
+    <div class="container">
 
-    <!-- Wrapper principale per contenuti -->
-    <div class="content-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo"><img src="img/logo.svg" alt="logo Spotify"></div>
 
-        <!-- Header sotto la navbar -->
-        <header class="page-header">
-            <a href="#" class="header-btn">Effettua L'upgrade</a>
-        </header>
+            <nav class="nav">
+                <div>Home</div>
+                <div>Cerca</div>
+                <div>La tua libreria</div>
+            </nav>
 
-        <!-- Main: griglia con copertine -->
-        <main class="main-grid">
-            <div class="album-card">Copertina 1</div>
-            <div class="album-card">Copertina 2</div>
-            <div class="album-card">Copertina 3</div>
-            <div class="album-card">Copertina 4</div>
+            <div class="playlist">
+                <div>Playlist</div>
+                <div>Crea Playlist</div>
+                <div>Nome Playlist</div>
+            </div>
 
-            <!-- ...altre copertine -->
+            <div class="user">John Doe</div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Header con upgrade -->
+            <header class="header">
+                <a href="#" class="upgrade-link">EFFETTUA L'UPGRADE</a>
+            </header>
+
+            <!-- Barra di navigazione secondaria -->
+            <nav class="category-bar">
+                <div>IN EVIDENZA</div>
+                <div>PODCAST</div>
+                <div>CLASSIFICHE</div>
+                <div>GENERI E MOOD</div>
+                <div>NUOVE USCITE</div>
+                <div>SCOPRI</div>
+            </nav>
+
+            <!-- Contenuto principale -->
+            <div class="content">
+                <section class="section">
+                    <h2>Recently played</h2>
+                    <div class="grid">
+                        <div class="card">Album</div>
+                        <div class="card">Album</div>
+                        <div class="card">Album</div>
+                        <div class="card">Album</div>
+                        <div class="card">Album</div>
+                        <div class="card">Album</div>
+                        <div class="card">Album</div>
+                        <div class="card">Album</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Creato per John Doe</h2>
+                    <div class="grid">
+                        <div class="card">Playlist</div>
+                        <div class="card">Playlist</div>
+                        <div class="card">Playlist</div>
+                        <div class="card">Playlist</div>
+                        <div class="card">Playlist</div>
+                        <div class="card">Playlist</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Artisti più popolari</h2>
+                    <div class="grid">
+                        <div class="card">Artista</div>
+                        <div class="card">Artista</div>
+                        <div class="card">Artista</div>
+                        <div class="card">Artista</div>
+                    </div>
+                </section>
+            </div>
         </main>
-
-        <!-- Footer con player -->
-        <footer class="player-footer">
-            <div class="player-info">Player</div>
-        </footer>
-   
     </div>
+
+    <!-- Player -->
+    <footer class="player">
+        <div></div>
+    </footer>
 </body>
 
 </html>
