@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -14,21 +16,42 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="logo"><img src="img/logo.svg" alt="logo Spotify"></div>
+            <div class="logo"><img src="img/logo.svg" alt="logo Spotify">
 
-            <nav class="nav">
-                <div>Home</div>
-                <div>Cerca</div>
-                <div>La tua libreria</div>
-            </nav>
-
-            <div class="playlist">
-                <div>Playlist</div>
-                <div>Crea Playlist</div>
-                <div>Nome Playlist</div>
+                <nav class="nav">
+                    <div>
+                        <i class="fa-solid fa-house"></i> Home
+                    </div>
+                    <div>
+                        <i class="fas fa-magnifying-glass"></i> Cerca
+                    </div>
+                    <div>
+                        <i class="fas fa-book"></i> La tua libreria
+                    </div>
+                </nav>
             </div>
 
-            <div class="user">John Doe</div>
+            <div class="playlist">
+                <h3>PLAYLIST</h3>
+                <div class="create-playlist">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <span>Crea Playlist</span>
+                </div>
+
+                <ul class="playlist-list">
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
+            </div>
+
+            <div class="user">
+                <i class="fa-solid fa-circle-user"></i> John Doe
+            </div>
         </aside>
 
         <!-- Main -->
@@ -54,40 +77,65 @@
                 <section class="section">
                     <h2>Recently played</h2>
                     <div class="grid">
-                        <div class="card">Album</div>
-                        <div class="card">Album</div>
-                        <div class="card">Album</div>
-                        <div class="card">Album</div>
-                        <div class="card">Album</div>
-                        <div class="card">Album</div>
-                        <div class="card">Album</div>
-                        <div class="card">Album</div>
+                        <div class="card">
+                            <img src="img/aquietplace.jpeg" alt="">
+                            <p class="card-text">Nome Album</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/cure.jpeg" alt="">
+                            <p class="card-text">Nome Album</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/split.jpeg" alt="">
+                            <p class="card-text">Nome Album</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/youg.jpeg" alt="">
+                            <p class="card-text">Nome Album</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/stranger.jpeg" alt="">
+                            <p class="card-text">Nome Album</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/sinister.jpeg" alt="">
+                            <p class="card-text">Nome Album</p>
+                        </div>
+
                     </div>
                 </section>
 
                 <section class="section">
                     <h2>Creato per John Doe</h2>
                     <div class="grid">
-                        <div class="card">Playlist</div>
-                        <div class="card">Playlist</div>
-                        <div class="card">Playlist</div>
-                        <div class="card">Playlist</div>
-                        <div class="card">Playlist</div>
-                        <div class="card">Playlist</div>
+                        <div class="card">
+                            <img src="img/radar.jpeg" alt="">
+                            <p class="card-text">Release Radar</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/mixdaily.jpeg" alt="">
+                            <p class="card-text">Daily Mix 1</p>
+                        </div>
                     </div>
                 </section>
 
                 <section class="section">
                     <h2>Artisti più popolari</h2>
                     <div class="grid">
-                        <div class="card">Artista</div>
-                        <div class="card">Artista</div>
-                        <div class="card">Artista</div>
-                        <div class="card">Artista</div>
+                        <div class="card">
+                            <img class="card-round" src="img/einaudi.jpeg" alt="">
+                            <p class="card-text">Ludovico Einaudi</p>
+                        </div>
+                        <div class="card">
+                            <img class="card-round" src="img/youg.jpeg" alt="">
+                            <p class="card-text">Lana Del Rey</p>
+                        </div>
+
                     </div>
-                </section>
             </div>
-        </main>
+            </section>
+    </div>
+    </main>
     </div>
 
     <!-- Player -->
